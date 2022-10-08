@@ -5,7 +5,7 @@ const { PostsModel } = require('../models/postsModel');
 
 router.get('/', (req, res) => {
     PostsModel.find((err, docs) => {
-        console.log(docs);
+       // console.log(docs);
         if (!err) res.send(docs);
         else console.log("Error to get the data :" + err);
     })
